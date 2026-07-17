@@ -96,7 +96,7 @@ a{
   align-items:center;
   padding:150px 7% 100px;
   color:#fff;
-  background-image:url("assets/hero.jpg");
+  background-image:url("assets/hero.jpeg");
   background-size:cover;
   background-position:center;
   overflow:hidden;
@@ -304,7 +304,7 @@ a{
 .about-image{
   min-height:540px;
   border-radius:8px;
-  background-image:url("assets/hero.jpg");
+  background-image:url("assets/hero.jpeg");
   background-size:cover;
   background-position:center;
 }
@@ -453,7 +453,7 @@ a{
 }
 
 .g1{
-  background-image:url("assets/hero.jpg");
+  background-image:url("assets/hero.jpeg");
   grid-column:span 2;
 }
 
@@ -474,7 +474,7 @@ a{
 }
 
 .g6{
-  background-image:url("assets/hero.jpg");
+  background-image:url("assets/hero.jpeg");
   grid-column:span 2;
 }
 
