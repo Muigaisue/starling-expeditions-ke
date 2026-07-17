@@ -28,13 +28,15 @@ a{
   color:inherit;
 }
 
+/* HEADER */
+
 .site-header{
   position:absolute;
   top:0;
   left:0;
   width:100%;
   z-index:20;
-  padding:22px 5%;
+  padding:15px 5%;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -42,7 +44,7 @@ a{
 
 .brand{
   background:#fff;
-  padding:7px 12px;
+  padding:5px 9px;
   border-radius:8px;
   display:flex;
   align-items:center;
@@ -50,7 +52,7 @@ a{
 }
 
 .brand img{
-  width:205px;
+  width:175px;
   height:auto;
   display:block;
 }
@@ -89,16 +91,18 @@ a{
   cursor:pointer;
 }
 
+/* HERO */
+
 .hero{
   min-height:760px;
   position:relative;
   display:flex;
   align-items:center;
-  padding:150px 7% 100px;
+  padding:185px 7% 100px;
   color:#fff;
   background-image:url("assets/hero.jpeg");
   background-size:cover;
-  background-position:center;
+  background-position:center 20%;
   overflow:hidden;
 }
 
@@ -116,6 +120,7 @@ a{
 .hero-content{
   position:relative;
   max-width:760px;
+  z-index:2;
 }
 
 .eyebrow{
@@ -204,9 +209,13 @@ a{
   color:var(--green);
 }
 
+/* GENERAL SECTIONS */
+
 .section{
   padding:95px 7%;
 }
+
+/* ADVENTURES */
 
 .adventure-grid{
   position:relative;
@@ -294,6 +303,8 @@ a{
   font-size:20px;
 }
 
+/* ABOUT */
+
 .about{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -306,7 +317,7 @@ a{
   border-radius:8px;
   background-image:url("assets/hero.jpeg");
   background-size:cover;
-  background-position:center;
+  background-position:center 20%;
 }
 
 .section-label{
@@ -344,6 +355,8 @@ a{
   color:var(--green-dark);
   font-weight:800;
 }
+
+/* TRIPS */
 
 .trips{
   background:var(--cream);
@@ -430,6 +443,8 @@ a{
   font-weight:800;
 }
 
+/* GALLERY */
+
 .gallery{
   background:var(--dark);
   color:#fff;
@@ -478,6 +493,8 @@ a{
   grid-column:span 2;
 }
 
+/* WHY US */
+
 .why{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -504,6 +521,8 @@ a{
   font-size:13px;
   line-height:1.6;
 }
+
+/* CONTACT */
 
 .contact{
   background:var(--green);
@@ -561,6 +580,8 @@ a{
   color:#061006;
 }
 
+/* FOOTER */
+
 footer{
   background:#050805;
   color:#fff;
@@ -609,12 +630,14 @@ footer{
   font-size:12px;
 }
 
+/* TABLET */
+
 @media(max-width:950px){
 
   .nav{
     display:none;
     position:absolute;
-    top:85px;
+    top:75px;
     left:5%;
     right:5%;
     background:#050805;
@@ -653,8 +676,9 @@ footer{
   footer{
     grid-template-columns:1fr 1fr;
   }
-
 }
+
+/* MOBILE */
 
 @media(max-width:600px){
 
@@ -668,7 +692,8 @@ footer{
 
   .hero{
     min-height:720px;
-    padding:130px 6% 70px;
+    padding:145px 6% 70px;
+    background-position:center 20%;
   }
 
   .hero h1{
@@ -722,5 +747,4 @@ footer{
     grid-template-columns:1fr;
     padding:50px 6%;
   }
-
 }
