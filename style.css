@@ -30,6 +30,7 @@ a{
   color:inherit;
 }
 
+
 /* =========================
    HEADER
 ========================= */
@@ -40,7 +41,7 @@ a{
   left:0;
   width:100%;
   z-index:20;
-  padding:15px 5%;
+  padding:18px 6%;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -48,15 +49,15 @@ a{
 
 .brand{
   background:#fff;
-  padding:5px 9px;
-  border-radius:8px;
+  padding:4px 7px;
+  border-radius:7px;
   display:flex;
   align-items:center;
-  box-shadow:0 6px 25px rgba(0,0,0,.28);
+  box-shadow:0 8px 25px rgba(0,0,0,.3);
 }
 
 .brand img{
-  width:175px;
+  width:145px;
   height:auto;
   display:block;
 }
@@ -101,6 +102,7 @@ a{
   cursor:pointer;
 }
 
+
 /* =========================
    HERO
 ========================= */
@@ -110,29 +112,35 @@ a{
   position:relative;
   display:flex;
   align-items:center;
-  padding:185px 7% 100px;
+  padding:180px 7% 100px;
   color:#fff;
   background-image:url("assets/hero.jpeg");
   background-size:cover;
-  background-position:center 20%;
+  background-position:center 23%;
   overflow:hidden;
 }
 
 .hero-overlay{
   position:absolute;
   inset:0;
+
   background:
     linear-gradient(
       90deg,
-      rgba(0,0,0,.9) 0%,
-      rgba(0,0,0,.7) 42%,
-      rgba(0,0,0,.2) 100%
+      rgba(0,0,0,.78) 0%,
+      rgba(0,0,0,.55) 42%,
+      rgba(0,0,0,.18) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(0,0,0,.35),
+      transparent 60%
     );
 }
 
 .hero-content{
   position:relative;
-  max-width:760px;
+  max-width:720px;
   z-index:2;
 }
 
@@ -150,10 +158,10 @@ a{
 
 .hero h1{
   font-family:Anton,Impact,sans-serif;
-  font-size:clamp(55px,7vw,105px);
-  line-height:.92;
+  font-size:clamp(55px,6.3vw,92px);
+  line-height:.94;
   letter-spacing:1px;
-  margin:0 0 30px;
+  margin:0 0 28px;
   text-transform:uppercase;
 }
 
@@ -162,10 +170,11 @@ a{
 }
 
 .hero-copy{
-  max-width:620px;
-  color:#e5ebe5;
+  max-width:600px;
+  color:#eef4ee;
   line-height:1.7;
   font-size:16px;
+  margin:0;
 }
 
 .hero-actions{
@@ -214,7 +223,7 @@ a{
 .hero-note{
   position:absolute;
   right:7%;
-  bottom:110px;
+  bottom:105px;
   font-size:23px;
   font-weight:700;
   line-height:1.1;
@@ -224,6 +233,7 @@ a{
 .hero-note em{
   color:var(--green);
 }
+
 
 /* =========================
    GENERAL SECTIONS
@@ -239,6 +249,7 @@ a{
   font-weight:800;
   letter-spacing:4px;
 }
+
 
 /* =========================
    ADVENTURE CARDS
@@ -277,11 +288,12 @@ a{
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(
-    0deg,
-    rgba(0,0,0,.92),
-    rgba(0,0,0,.08)
-  );
+  background:
+    linear-gradient(
+      0deg,
+      rgba(0,0,0,.92),
+      rgba(0,0,0,.08)
+    );
 }
 
 .adventure-card>div,
@@ -342,6 +354,7 @@ a{
   transform:rotate(-20deg);
 }
 
+
 /* =========================
    ABOUT
 ========================= */
@@ -358,7 +371,7 @@ a{
   border-radius:8px;
   background-image:url("assets/hero.jpeg");
   background-size:cover;
-  background-position:center 20%;
+  background-position:center 23%;
   box-shadow:0 15px 35px rgba(0,0,0,.1);
 }
 
@@ -396,6 +409,7 @@ a{
   color:var(--green);
   transform:translateX(5px);
 }
+
 
 /* =========================
    TRIPS
@@ -483,14 +497,15 @@ a{
 
 .trip-info a{
   color:var(--green-dark);
-  font-size:13px;
   font-weight:800;
+  font-size:13px;
   transition:.3s ease;
 }
 
 .trip-info a:hover{
   color:var(--green);
 }
+
 
 /* =========================
    GALLERY
@@ -549,6 +564,7 @@ a{
   grid-column:span 2;
 }
 
+
 /* =========================
    WHY STARLING
 ========================= */
@@ -584,6 +600,7 @@ a{
   font-size:13px;
   line-height:1.6;
 }
+
 
 /* =========================
    CONTACT
@@ -651,6 +668,7 @@ a{
   color:#061006;
 }
 
+
 /* =========================
    FOOTER
 ========================= */
@@ -665,9 +683,9 @@ footer{
 }
 
 .footer-brand img{
-  width:200px;
+  width:170px;
   background:#fff;
-  padding:7px;
+  padding:6px;
   border-radius:7px;
 }
 
@@ -708,6 +726,7 @@ footer{
   color:#829087;
   font-size:12px;
 }
+
 
 /* =========================
    TABLET
@@ -757,7 +776,9 @@ footer{
   footer{
     grid-template-columns:1fr 1fr;
   }
+
 }
+
 
 /* =========================
    MOBILE
@@ -770,17 +791,17 @@ footer{
   }
 
   .brand img{
-    width:160px;
+    width:145px;
   }
 
   .hero{
     min-height:720px;
     padding:145px 6% 70px;
-    background-position:center 20%;
+    background-position:center 23%;
   }
 
   .hero h1{
-    font-size:55px;
+    font-size:54px;
   }
 
   .hero-copy{
@@ -830,4 +851,5 @@ footer{
     grid-template-columns:1fr;
     padding:50px 6%;
   }
+
 }
