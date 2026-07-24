@@ -1,1103 +1,1255 @@
-/* ===========================================
-        STARLING EXPEDITIONS KE
-=========================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-:root{
+<head>
 
-    --green:#55d400;
-    --green-dark:#2d8b00;
-    --black:#0d0d0d;
-    --white:#ffffff;
-    --light:#f7f7f7;
-    --grey:#6d6d6d;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    --shadow:0 18px 45px rgba(0,0,0,.18);
+<title>
+Starling Expeditions KE | Embrace Nature
+</title>
 
-    --radius:18px;
+<link rel="stylesheet" href="style.css">
 
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-*{
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-}
+</head>
 
-html{
+<body>
 
-    scroll-behavior:smooth;
 
-}
+<!-- =============================
+        HERO SECTION
+============================== -->
 
-body{
+<header class="hero" id="home">
 
-    font-family:'Inter',sans-serif;
-    background:#fff;
-    color:#222;
-    overflow-x:hidden;
+<div class="overlay"></div>
 
-}
+<header class="navbar">
 
-img{
+<a href="index.html" class="logo">
 
-    width:100%;
-    display:block;
+<img src="assets/logo.jpeg"
 
-}
+alt="Starling Expeditions KE">
 
-a{
+</a>
 
-    text-decoration:none;
+<nav>
 
-}
+<ul>
 
-section{
+<li><a href="#home">Home</a></li>
 
-    padding:100px 7%;
+<li><a href="#about">About</a></li>
 
-}
+<li><a href="#experiences">Experiences</a></li>
 
-/* ===========================
-        NAVIGATION
-=========================== */
+<li><a href="#gallery">Gallery</a></li>
 
-.site-header{
+<li><a href="#contact">Contact</a></li>
 
-    position:absolute;
-    width:100%;
-    top:0;
-    left:0;
-    z-index:999;
+<li>
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+<a class="book-btn"
 
-    padding:25px 7%;
+href="https://wa.me/254745947000"
 
-}
+target="_blank">
 
-.brand{
+Book Now
 
-    background:#fff;
-    padding:10px 18px;
-    border-radius:12px;
-    box-shadow:var(--shadow);
+</a>
 
-}
+</li>
 
-.brand img{
+</ul>
 
-    width:190px;
+</nav>
 
-}
+</header>
 
-.nav{
 
-    display:flex;
-    gap:35px;
-    align-items:center;
 
-}
+<div class="hero-content">
 
-.nav a{
+<span>
 
-    color:#fff;
-    font-weight:600;
-    transition:.35s;
+EXPLORE • EXPERIENCE • CONNECT
 
-}
+</span>
 
-.nav a:hover{
+<h1>
 
-    color:var(--green);
+STARLING
 
-}
+<br>
 
-.nav-cta{
+<span>
 
-    background:var(--green);
-    color:#000 !important;
+EXPEDITIONS KE
 
-    padding:14px 25px;
+</span>
 
-    border-radius:8px;
+</h1>
 
-    font-weight:700;
+<p>
 
-}
+Embrace Nature.
 
-.nav-cta:hover{
+Explore Kenya through unforgettable hiking adventures,
 
-    background:#fff;
+road trips,
 
-}
+waterfall chasing,
 
-/* ===========================
-            HERO
-=========================== */
+camping,
 
-.hero{
+team building,
 
-    position:relative;
+and tailor-made outdoor experiences.
 
-    min-height:100vh;
+</p>
 
-    display:flex;
+<div class="hero-buttons">
 
-    align-items:center;
+<a href="#experiences"
 
-    padding:0 7%;
+class="primary-btn">
 
-    background:url("assets/hero.jpeg") center center/cover no-repeat;
+Explore Adventures
 
-}
+</a>
 
-.hero-overlay{
+<a href="#about"
 
-    position:absolute;
+class="secondary-btn">
 
-    inset:0;
+Learn More
 
-    background:linear-gradient(
+</a>
 
-    90deg,
+</div>
 
-    rgba(0,0,0,.88),
+</div>
 
-    rgba(0,0,0,.55),
+</header>
 
-    rgba(0,0,0,.15)
 
-    );
 
-}
+<!-- =============================
+      ADVENTURE CATEGORIES
+============================== -->
 
-.hero-content{
+<section class="categories">
 
-    position:relative;
+<div class="category"
 
-    z-index:5;
+style="background-image:url('assets/hiking.jpg')">
 
-    max-width:760px;
+<div class="category-overlay"></div>
 
-    color:#fff;
+<div class="category-content">
 
-}
+<i class="fa-solid fa-mountain"></i>
 
-.eyebrow{
+<h3>
 
-    color:var(--green);
+Hiking Adventures
 
-    font-size:15px;
+</h3>
 
-    letter-spacing:3px;
+<p>
 
-    font-weight:700;
+Mountains • Forests • Craters
 
-}
+</p>
 
-.hero h1{
+<a href="hiking/">
 
-    font-family:'Anton',sans-serif;
+Explore →
 
-    font-size:110px;
+</a>
 
-    line-height:.95;
+</div>
 
-    margin:20px 0;
+</div>
 
-    letter-spacing:2px;
 
-}
 
-.hero h1 span{
+<div class="category"
 
-    color:var(--green);
+style="background-image:url('assets/roadtrip.jpg')">
 
-}
+<div class="category-overlay"></div>
 
-.hero p{
+<div class="category-content">
 
-    color:#ddd;
+<i class="fa-solid fa-route"></i>
 
-    font-size:19px;
+<h3>
 
-    line-height:1.8;
+Road Trips
 
-    max-width:620px;
+</h3>
 
-    margin-bottom:40px;
+<p>
 
-}
+Explore Kenya
 
-/* ===========================
-            BUTTONS
-=========================== */
+</p>
 
-.hero-buttons{
+<a href="road-trips/">
 
-    display:flex;
+Explore →
 
-    gap:20px;
+</a>
 
-}
+</div>
 
-.btn{
+</div>
 
-    display:inline-flex;
 
-    justify-content:center;
 
-    align-items:center;
+<div class="category"
 
-    padding:17px 32px;
+style="background-image:url('assets/waterfall.jpg')">
 
-    border-radius:8px;
+<div class="category-overlay"></div>
 
-    font-weight:700;
+<div class="category-content">
 
-    transition:.35s;
+<i class="fa-solid fa-water"></i>
 
-}
+<h3>
 
-.btn-primary{
+Waterfalls
 
-    background:var(--green);
+</h3>
 
-    color:#000;
+<p>
 
-}
+Hidden Gems
 
-.btn-primary:hover{
+</p>
 
-    background:#fff;
+<a href="waterfalls/">
 
-}
+Explore →
 
-.btn-outline{
+</a>
 
-    border:2px solid #fff;
+</div>
 
-    color:#fff;
+</div>
 
-}
 
-.btn-outline:hover{
 
-    background:#fff;
+<div class="category"
 
-    color:#000;
+style="background-image:url('assets/outdoor.jpg')">
 
-}
+<div class="category-overlay"></div>
 
-/* ===========================
-      ADVENTURE CARDS
-=========================== */
+<div class="category-content">
 
-.adventure-grid{
+<i class="fa-solid fa-campground"></i>
 
-    display:grid;
+<h3>
 
-    grid-template-columns:repeat(4,1fr);
+Outdoor Experiences
 
-}
+</h3>
 
-.adventure-card{
+<p>
 
-    position:relative;
+Camping • Nature • Fun
 
-    min-height:330px;
+</p>
 
-    overflow:hidden;
+<a href="outdoors/">
 
-    cursor:pointer;
+Explore →
 
-}
+</a>
 
-.adventure-card::before{
+</div>
 
-    content:"";
+</div>
 
-    position:absolute;
+</section>
+<!-- ==========================================
+                ABOUT US
+========================================== -->
 
-    inset:0;
+<section class="about" id="about">
 
-    background:rgba(0,0,0,.45);
+<div class="about-image">
 
-    transition:.35s;
+<img src="assets/about.jpg"
 
-}
+alt="Starling Expeditions KE">
 
-.adventure-card:hover::before{
+</div>
 
-    background:rgba(0,0,0,.18);
+<div class="about-content">
 
-}
+<span class="section-title">
 
-.hike{
+WHO WE ARE
 
-    background:url("assets/hiking.jpg") center/cover;
+</span>
 
-}
+<h2>
 
-.road{
+We Don't Just Organize Trips...
 
-    background:url("assets/roadtrip.jpg") center/cover;
+<span>
 
-}
+We Create Memories.
 
-.waterfall{
+</span>
 
-    background:url("assets/waterfall.jpg") center/cover;
+</h2>
 
-}
+<p>
 
-.outdoors{
+Starling Expeditions KE is an outdoor adventure company based in Kenya,
+committed to creating unforgettable experiences through hiking,
+road trips, waterfall expeditions, camping,
+team building and tailor-made adventures.
 
-    background:url("assets/outdoor.jpg") center/cover;
+</p>
 
-}
+<p>
 
-.card-content{
+Our mission is simple:
 
-    position:absolute;
+<strong>
 
-    left:30px;
+Embrace Nature.
 
-    right:30px;
+</strong>
 
-    bottom:30px;
+We believe every adventure should reconnect people with nature,
+build friendships and leave lasting memories.
 
-    z-index:2;
+</p>
 
-    color:#fff;
 
-}
 
-.card-icon{
+<div class="mission-vision">
 
-    font-size:38px;
+<div class="card">
 
-}
+<i class="fa-solid fa-bullseye"></i>
 
-.card-content h3{
+<h3>
 
-    font-family:'Anton',sans-serif;
+Mission
 
-    font-size:38px;
+</h3>
 
-    margin:12px 0;
+<p>
 
-}
+To inspire people to embrace nature through memorable,
+safe and affordable outdoor adventures.
 
-.card-content p{
+</p>
 
-    color:#ddd;
+</div>
 
-    line-height:1.7;
 
-    margin-bottom:22px;
 
-}
+<div class="card">
 
-.card-content a{
+<i class="fa-solid fa-eye"></i>
 
-    display:flex;
+<h3>
 
-    justify-content:center;
+Vision
 
-    align-items:center;
+</h3>
 
-    width:48px;
+<p>
 
-    height:48px;
+To become East Africa's most trusted outdoor adventure company.
 
-    background:#fff;
+</p>
 
-    color:#000;
+</div>
 
-    border-radius:50%;
+</div>
 
-    transition:.35s;
+</div>
 
-}
+</section>
 
-.card-content a:hover{
 
-    background:var(--green);
 
-}
-
-/* ===========================
-      SECTION HEADINGS
-=========================== */
-
-.section-heading{
-
-    text-align:center;
-
-    margin-bottom:70px;
-
-}
-
-.section-tag{
-
-    color:var(--green);
-
-    letter-spacing:2px;
-
-    font-size:14px;
-
-    font-weight:700;
-
-}
-
-.section-heading h2{
-
-    margin-top:18px;
-
-    font-size:58px;
-
-    font-family:'Anton',sans-serif;
-
-    line-height:1;
-
-}
-
-.section-heading h2 span{
-
-    color:var(--green);
-
-}
-
-.section-heading p{
-
-    max-width:700px;
-
-    margin:25px auto 0;
-
-    color:#666;
-
-    line-height:1.8;
-
-}
-/* ===========================================
-                ABOUT SECTION
-=========================================== */
-
-.about{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:70px;
-
-    align-items:center;
-
-}
-
-.about-image img{
-
-    border-radius:20px;
-
-    box-shadow:var(--shadow);
-
-}
-
-.about-content h2{
-
-    margin:20px 0;
-
-    font-size:58px;
-
-    font-family:'Anton',sans-serif;
-
-    line-height:1;
-
-}
-
-.about-content h2 span{
-
-    color:var(--green);
-
-}
-
-.about-content p{
-
-    color:#666;
-
-    line-height:1.9;
-
-    margin-bottom:18px;
-
-}
-
-.about-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:25px;
-
-    margin:40px 0;
-
-}
-
-.about-card{
-
-    background:#fff;
-
-    border-radius:18px;
-
-    padding:30px;
-
-    box-shadow:var(--shadow);
-
-    transition:.35s;
-
-}
-
-.about-card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-.about-card h3{
-
-    color:var(--green);
-
-    margin-bottom:15px;
-
-}
-
-/* ===========================================
+<!-- ==========================================
                 STATISTICS
-=========================================== */
+========================================== -->
 
-.statistics{
+<section class="stats">
 
-    display:grid;
+<div class="stat">
 
-    grid-template-columns:repeat(4,1fr);
+<h2>
 
-    gap:20px;
+50+
 
-    margin-top:35px;
+</h2>
 
-}
+<p>
 
-.stat-box{
+Destinations
 
-    background:#111;
+</p>
 
-    color:#fff;
+</div>
 
-    padding:28px;
 
-    text-align:center;
 
-    border-radius:18px;
+<div class="stat">
 
-}
+<h2>
 
-.stat-box h2{
+500+
 
-    color:var(--green);
+</h2>
 
-    font-family:'Anton',sans-serif;
+<p>
 
-    font-size:48px;
+Happy Travellers
 
-    margin-bottom:8px;
+</p>
 
-}
+</div>
 
-.stat-box p{
 
-    color:#ddd;
 
-}
+<div class="stat">
 
-/* ===========================================
-              WHY CHOOSE US
-=========================================== */
+<h2>
 
-.why-us{
+30+
 
-    background:#f8f8f8;
+</h2>
 
-}
+<p>
 
-.why-grid{
+Hiking Trails
 
-    display:grid;
+</p>
 
-    grid-template-columns:repeat(4,1fr);
+</div>
 
-    gap:25px;
 
-}
 
-.why-card{
+<div class="stat">
 
-    background:#fff;
+<h2>
 
-    border-radius:18px;
+100%
 
-    padding:35px;
+</h2>
 
-    text-align:center;
+<p>
 
-    transition:.35s;
+Adventure
 
-    box-shadow:var(--shadow);
+</p>
 
-}
+</div>
 
-.why-card:hover{
+</section>
 
-    transform:translateY(-10px);
 
-}
 
-.why-card .icon{
+<!-- ==========================================
+            WHY CHOOSE US
+========================================== -->
 
-    font-size:48px;
+<section class="why-us">
 
-    margin-bottom:18px;
+<div class="heading">
 
-}
+<span>
 
-.why-card h3{
+WHY CHOOSE STARLING?
 
-    margin-bottom:15px;
+</span>
 
-}
+<h2>
 
-.why-card p{
+Adventure With Confidence
 
-    color:#666;
+</h2>
 
-    line-height:1.8;
+</div>
 
-}
 
-/* ===========================================
-                RESPONSIVE
-=========================================== */
 
-@media(max-width:992px){
+<div class="why-grid">
 
-.about{
 
-grid-template-columns:1fr;
 
-}
+<div class="why-card">
 
-.about-grid{
+<i class="fa-solid fa-mountain-sun"></i>
 
-grid-template-columns:1fr;
+<h3>
 
-}
+Unique Destinations
 
-.statistics{
+</h3>
 
-grid-template-columns:repeat(2,1fr);
+<p>
 
-}
+Hidden gems,
 
-.why-grid{
+beautiful landscapes,
 
-grid-template-columns:repeat(2,1fr);
+mountains,
 
-}
+waterfalls and unforgettable experiences.
 
-}
+</p>
 
-@media(max-width:768px){
+</div>
 
-.section-heading h2,
 
-.about-content h2{
 
-font-size:42px;
+<div class="why-card">
 
-}
+<i class="fa-solid fa-shield-heart"></i>
 
-.statistics{
+<h3>
 
-grid-template-columns:1fr;
+Safety First
 
-}
+</h3>
 
-.why-grid{
+<p>
 
-grid-template-columns:1fr;
+Every trip is professionally planned
+with safety as our highest priority.
 
-}
+</p>
 
-}/* ===========================================
+</div>
+
+
+
+<div class="why-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h3>
+
+Experienced Team
+
+</h3>
+
+<p>
+
+Friendly,
+
+knowledgeable and passionate guides
+who love the outdoors.
+
+</p>
+
+</div>
+
+
+
+<div class="why-card">
+
+<i class="fa-solid fa-leaf"></i>
+
+<h3>
+
+Sustainable Tourism
+
+</h3>
+
+<p>
+
+We encourage responsible travel
+and environmental conservation.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================================
                 EXPERIENCES
-=========================================== */
+========================================== -->
 
-.experience-grid{
+<section class="experiences" id="experiences">
 
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:35px;
+<div class="heading">
 
-}
+<span>
 
-.experience-card{
+OUR EXPERIENCES
 
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:var(--shadow);
-    transition:.35s;
+</span>
 
-}
+<h2>
 
-.experience-card:hover{
+Choose Your Next Adventure
 
-    transform:translateY(-12px);
+</h2>
 
-}
+<p>
 
-.experience-image{
+Whether you're looking for a thrilling mountain hike,
 
-    height:260px;
-    background-size:cover;
-    background-position:center;
+a relaxing road trip,
 
-}
+a hidden waterfall,
 
-.experience-image.hike{
-    background:url("assets/hiking.jpg") center/cover;
-}
+or a tailor-made expedition,
 
-.experience-image.roadtrip{
-    background:url("assets/roadtrip.jpg") center/cover;
-}
+Starling Expeditions KE has something for everyone.
 
-.experience-image.falls{
-    background:url("assets/waterfall.jpg") center/cover;
-}
+</p>
 
-.experience-image.outdoor{
-    background:url("assets/outdoor.jpg") center/cover;
-}
+</div>
 
-.experience-image.institution{
-    background:url("assets/institution.jpg") center/cover;
-}
 
-.experience-image.custom{
-    background:url("assets/custom.jpg") center/cover;
-}
 
-.experience-content{
+<div class="experience-grid">
 
-    padding:30px;
 
-}
 
-.trip-tag{
 
-    color:var(--green);
-    letter-spacing:2px;
-    font-size:13px;
-    font-weight:700;
+<!-- Hiking -->
 
-}
+<div class="experience-card">
 
-.experience-content h3{
+<img src="assets/hiking.jpg"
 
-    font-size:32px;
-    margin:15px 0;
-    font-family:'Anton',sans-serif;
+alt="Hiking">
 
-}
+<div class="experience-info">
 
-.experience-content p{
+<span>
 
-    color:#666;
-    line-height:1.8;
-    margin-bottom:25px;
+HIKING
 
-}
+</span>
 
-.experience-content a{
+<h3>
 
-    color:var(--green-dark);
-    font-weight:700;
+Mountain Adventures
 
-}
+</h3>
 
-.experience-content a:hover{
+<p>
 
-    color:var(--green);
+Experience Kenya's most breathtaking mountains,
 
-}
+craters,
 
-/* ===========================================
+and scenic hiking trails with professional guides.
+
+</p>
+
+<a href="hiking/"
+
+class="trip-btn">
+
+View Trips
+
+</a>
+
+</div>
+
+</div>
+
+
+
+
+<!-- Road Trips -->
+
+<div class="experience-card">
+
+<img src="assets/roadtrip.jpg"
+
+alt="Road Trips">
+
+<div class="experience-info">
+
+<span>
+
+ROAD TRIPS
+
+</span>
+
+<h3>
+
+Discover Kenya
+
+</h3>
+
+<p>
+
+Explore Kenya's parks,
+
+lakes,
+
+hidden gems,
+
+and breathtaking landscapes.
+
+</p>
+
+<a href="road-trips/"
+
+class="trip-btn">
+
+View Trips
+
+</a>
+
+</div>
+
+</div>
+
+
+
+
+<!-- Waterfalls -->
+
+<div class="experience-card">
+
+<img src="assets/waterfall.jpg"
+
+alt="Waterfalls">
+
+<div class="experience-info">
+
+<span>
+
+WATERFALLS
+
+</span>
+
+<h3>
+
+Hidden Natural Wonders
+
+</h3>
+
+<p>
+
+Visit spectacular waterfalls,
+
+rivers,
+
+natural pools
+
+and scenic forests.
+
+</p>
+
+<a href="waterfalls/"
+
+class="trip-btn">
+
+View Trips
+
+</a>
+
+</div>
+
+</div>
+
+
+
+
+<!-- Outdoor -->
+
+<div class="experience-card">
+
+<img src="assets/outdoor.jpg"
+
+alt="Outdoor">
+
+<div class="experience-info">
+
+<span>
+
+OUTDOOR
+
+</span>
+
+<h3>
+
+Camping & Nature
+
+</h3>
+
+<p>
+
+Camping,
+
+bonfires,
+
+cycling,
+
+photography,
+
+bird watching,
+
+and unforgettable adventures.
+
+</p>
+
+<a href="outdoors/"
+
+class="trip-btn">
+
+View Trips
+
+</a>
+
+</div>
+
+</div>
+
+
+
+
+<!-- Institutions -->
+
+<div class="experience-card">
+
+<img src="assets/institution.jpg"
+
+alt="Institution">
+
+<div class="experience-info">
+
+<span>
+
+INSTITUTIONS
+
+</span>
+
+<h3>
+
+Educational Tours
+
+</h3>
+
+<p>
+
+School trips,
+
+college expeditions,
+
+leadership camps,
+
+industrial visits
+
+and educational adventures.
+
+</p>
+
+<a href="#contact"
+
+class="trip-btn">
+
+Book Now
+
+</a>
+
+</div>
+
+</div>
+
+
+
+
+<!-- Custom -->
+
+<div class="experience-card">
+
+<img src="assets/custom.jpg"
+
+alt="Custom">
+
+<div class="experience-info">
+
+<span>
+
+CUSTOM TOURS
+
+</span>
+
+<h3>
+
+Tailor Made Expeditions
+
+</h3>
+
+<p>
+
+Tell us your destination,
+
+budget,
+
+dates
+
+and interests,
+
+and we'll create the perfect trip.
+
+</p>
+
+<a href="#contact"
+
+class="trip-btn">
+
+Plan My Trip
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================================
                 GALLERY
-=========================================== */
+========================================== -->
 
-.gallery{
+<section class="gallery" id="gallery">
 
-    background:#f8f8f8;
+<div class="heading">
 
-}
+<span>OUR GALLERY</span>
 
-.gallery-grid{
+<h2>Adventure Moments</h2>
 
-    display:grid;
+<p>
 
-    grid-template-columns:2fr 1fr 1fr;
+Every adventure tells a story.
 
-    gap:15px;
+Here are a few moments captured across Kenya.
 
-}
+</p>
 
-.gallery-item{
+</div>
 
-    overflow:hidden;
+<div class="gallery-grid">
 
-    border-radius:18px;
+<img src="assets/gallery1.jpg" alt="">
+<img src="assets/gallery2.jpg" alt="">
+<img src="assets/gallery3.jpg" alt="">
+<img src="assets/gallery4.jpg" alt="">
+<img src="assets/gallery5.jpg" alt="">
+<img src="assets/gallery6.jpg" alt="">
 
-}
+</div>
 
-.gallery-item.large{
+</section>
 
-    grid-row:span 2;
 
-}
 
-.gallery-item img{
-
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.4s;
-
-}
-
-.gallery-item:hover img{
-
-    transform:scale(1.08);
-
-}
-
-/* ===========================================
+<!-- ==========================================
                 CONTACT
-=========================================== */
+========================================== -->
 
-.contact{
+<section class="contact" id="contact">
 
-    display:grid;
+<div class="contact-left">
 
-    grid-template-columns:1fr 1fr;
+<span>GET IN TOUCH</span>
 
-    gap:70px;
+<h2>
 
-    align-items:center;
+Let's Plan
 
-}
+Your Next Adventure
 
-.contact-content h2{
+</h2>
 
-    font-size:58px;
-    margin:20px 0;
-    font-family:'Anton',sans-serif;
+<p>
 
-}
+Ready to embrace nature?
 
-.contact-content h2 span{
+Contact us today and let's plan an unforgettable experience.
 
-    color:var(--green);
+</p>
 
-}
+<div class="contact-details">
 
-.contact-content p{
+<p>
 
-    color:#666;
-    line-height:1.8;
-    margin-bottom:25px;
+<i class="fa-solid fa-phone"></i>
 
-}
+0745 947 000
 
-.contact-details{
+</p>
 
-    display:grid;
-    gap:18px;
-    margin:35px 0;
+<p>
 
-}
+<i class="fa-solid fa-envelope"></i>
 
-.contact-details strong{
+starlingexpeditionske@gmail.com
 
-    color:#111;
+</p>
 
-}
+<p>
 
-.contact-form{
+<i class="fa-solid fa-location-dot"></i>
 
-    background:#fff;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:var(--shadow);
+Limuru, Kenya
 
-}
+</p>
 
-.contact-form form{
+</div>
 
-    display:grid;
-    gap:18px;
+</div>
 
-}
 
-.contact-form input,
-.contact-form select,
-.contact-form textarea{
 
-    width:100%;
-    padding:16px;
-    border:1px solid #ddd;
-    border-radius:8px;
-    font-family:inherit;
+<div class="contact-right">
 
-}
+<form>
 
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus{
+<input
 
-    outline:none;
-    border-color:var(--green);
+type="text"
 
-}
+placeholder="Full Name"
 
-/* ===========================================
+required>
+
+<input
+
+type="email"
+
+placeholder="Email Address"
+
+required>
+
+<input
+
+type="tel"
+
+placeholder="Phone Number">
+
+<select>
+
+<option>
+
+Choose Adventure
+
+</option>
+
+<option>
+
+Hiking
+
+</option>
+
+<option>
+
+Road Trips
+
+</option>
+
+<option>
+
+Waterfalls
+
+</option>
+
+<option>
+
+Outdoor Experiences
+
+</option>
+
+<option>
+
+Institution Trips
+
+</option>
+
+</select>
+
+<textarea
+
+rows="6"
+
+placeholder="Tell us about your adventure...">
+
+</textarea>
+
+<button>
+
+Send Inquiry
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+
+<!-- ==========================================
                 FOOTER
-=========================================== */
+========================================== -->
 
-footer{
+<footer>
 
-    background:#111;
-    color:#fff;
+<div>
 
-    display:grid;
-    grid-template-columns:2fr 1fr 1fr 1fr;
-    gap:40px;
+<img src="assets/logo.jpeg"
 
-    padding:70px 7%;
+alt="Starling Logo"
 
-}
+class="footer-logo">
 
-.footer-logo img{
+<p>
 
-    width:180px;
-    background:#fff;
-    padding:10px;
-    border-radius:10px;
-    margin-bottom:20px;
+Embrace Nature.
 
-}
+Explore Kenya.
 
-footer h4{
+Create Memories.
 
-    color:var(--green);
-    margin-bottom:20px;
+</p>
 
-}
+</div>
 
-footer ul{
+<div>
 
-    list-style:none;
+<h3>
 
-}
+Quick Links
 
-footer li{
+</h3>
 
-    margin-bottom:12px;
+<ul>
 
-}
+<li><a href="#home">Home</a></li>
 
-footer a{
+<li><a href="#about">About</a></li>
 
-    color:#ccc;
+<li><a href="#experiences">Experiences</a></li>
 
-}
+<li><a href="#gallery">Gallery</a></li>
 
-footer a:hover{
+<li><a href="#contact">Contact</a></li>
 
-    color:var(--green);
+</ul>
 
-}
+</div>
 
-footer p{
+<div>
 
-    color:#ccc;
-    margin-bottom:10px;
+<h3>
 
-}
+Experiences
 
-.copyright{
+</h3>
 
-    background:#000;
-    color:#aaa;
-    text-align:center;
-    padding:18px;
-    font-size:14px;
+<ul>
 
-}
+<li><a href="hiking/">Hiking</a></li>
 
-/* ===========================================
-            FINAL RESPONSIVE
-=========================================== */
+<li><a href="road-trips/">Road Trips</a></li>
 
-@media(max-width:992px){
+<li><a href="waterfalls/">Waterfalls</a></li>
 
-.experience-grid{
-grid-template-columns:1fr;
-}
+<li><a href="outdoors/">Outdoor</a></li>
 
-.gallery-grid{
-grid-template-columns:1fr;
-}
+</ul>
 
-.contact{
-grid-template-columns:1fr;
-}
+</div>
 
-footer{
-grid-template-columns:repeat(2,1fr);
-}
+<div>
 
-}
+<h3>
 
-@media(max-width:768px){
+Follow Us
 
-footer{
-grid-template-columns:1fr;
-text-align:center;
-}
+</h3>
 
-.footer-logo img{
-margin:auto auto 20px;
-}
+<p>
 
-.contact-content h2{
-font-size:42px;
-}
+<i class="fab fa-facebook"></i>
 
-}
+Facebook
+
+</p>
+
+<p>
+
+<i class="fab fa-instagram"></i>
+
+Instagram
+
+</p>
+
+<p>
+
+<i class="fab fa-tiktok"></i>
+
+TikTok
+
+</p>
+
+<p>
+
+<i class="fab fa-whatsapp"></i>
+
+WhatsApp
+
+</p>
+
+</div>
+
+</footer>
+
+
+
+<div class="copyright">
+
+© 2026 Starling Expeditions KE.
+
+All Rights Reserved.
+
+</div>
+
+
+
+</body>
+
+</html>
