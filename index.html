@@ -3,915 +3,1246 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
 
-<title>Starling Expeditions KE | Embrace Nature</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description"
-content="Adventure tours, hiking, waterfalls, road trips and unforgettable outdoor experiences in Kenya.">
+  <title>Starling Expeditions KE | Embrace Nature</title>
 
-<link rel="stylesheet" href="style.css">
+  <meta name="description"
+    content="Starling Expeditions KE — embrace nature through hiking adventures, road trips and unforgettable outdoor experiences across Kenya.">
 
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-<!--==========================
-        HEADER
-===========================-->
 
-<header>
+<header class="site-header">
 
-<div class="navbar">
 
-<a href="#" class="logo">
+  <a class="brand" href="#home">
 
-<img src="assets/logo.png"
-alt="Starling Expeditions KE">
+    <img src="assets/logo.jpeg"
+      alt="Starling Expeditions KE logo">
 
-</a>
+  </a>
 
-<nav>
 
-<ul>
+  <button class="menu-toggle"
+    aria-label="Open menu">
 
-<li><a href="#home">Home</a></li>
+    ☰
 
-<li><a href="#about">About Us</a></li>
+  </button>
 
-<li><a href="#adventures">Adventures</a></li>
 
-<li><a href="#explore">Explore</a></li>
+  <nav class="nav">
 
-<li><a href="#gallery">Gallery</a></li>
 
-<li><a href="#contact">Contact</a></li>
+    <a class="active" href="#home">
+      Home
+    </a>
 
-</ul>
 
-</nav>
+    <a href="#about">
+      About Us
+    </a>
 
-<a href="#contact" class="book-btn">
 
-Book an Adventure
+    <a href="#adventures">
+      Adventures
+    </a>
 
-</a>
 
-</div>
+    <a href="#trips">
+      Explore
+    </a>
+
+
+    <a href="#gallery">
+      Gallery
+    </a>
+
+
+    <a href="#contact">
+      Contact
+    </a>
+
+
+    <a class="nav-cta"
+      href="https://wa.me/254745947000?text=Hello%20Starling%20Expeditions%20KE%2C%20I%20would%20like%20to%20book%20an%20adventure."
+      target="_blank">
+
+      Book an Adventure
+
+    </a>
+
+
+  </nav>
+
 
 </header>
 
 
-<!--==========================
-        HERO
-===========================-->
+<main>
 
-<section class="hero" id="home">
 
-<div class="hero-content">
+<!-- =========================
+     HERO
+========================= -->
 
-<span>
 
-EXPLORE • EXPERIENCE • CONNECT
+<section id="home" class="hero">
 
-</span>
 
-<h1>
+  <div class="hero-overlay"></div>
 
-STARLING
 
-<span>
+  <div class="hero-content">
 
-EXPEDITIONS KE
 
-</span>
+    <p class="eyebrow">
 
-</h1>
+      STARLING EXPEDITIONS KE
 
-<h3>
+    </p>
 
-EMBRACE NATURE
 
-</h3>
+    <h1>
 
-<p>
+      EMBRACE<br>
 
-Hiking trails, scenic road trips,
-waterfall chasing and unforgettable
-outdoor experiences.
+      <span>NATURE.</span>
 
-We take you beyond the ordinary
-and closer to the wild side of Kenya.
+    </h1>
 
-</p>
 
-<div class="hero-buttons">
+    <p class="hero-copy">
 
-<a href="#adventures"
-class="primary-btn">
+      Hiking trails, scenic road trips and unforgettable outdoor experiences.
 
-FIND YOUR ADVENTURE →
+      We take you beyond the ordinary and closer to the wild side of Kenya.
 
-</a>
+    </p>
 
-<a href="#about"
-class="secondary-btn">
 
-DISCOVER STARLING
+    <div class="hero-actions">
 
-</a>
 
-</div>
+      <a class="btn btn-primary"
+        href="#adventures">
 
-</div>
+        Find Your Adventure <b>→</b>
+
+      </a>
+
+
+      <a class="btn btn-outline"
+        href="#about">
+
+        Discover Starling
+
+      </a>
+
+
+    </div>
+
+
+  </div>
+
+
+  <div class="hero-note">
+
+    Explore more.<br>
+
+    Feel the wild.<br>
+
+    <em>Embrace nature.</em>
+
+  </div>
+
 
 </section>
 
 
-<!--==========================
-    ADVENTURE CATEGORIES
-===========================-->
-
-<section
-class="categories"
-id="adventures">
-  <div class="category hike">
-
-<div class="category-content">
-
-<i class="fa-solid fa-boot"></i>
-
-<h3>
-
-HIKING
-ADVENTURES
-
-</h3>
-
-<p>
-
-Find your trail.
-Chase the view.
-Feel the climb.
-
-</p>
-
-<a href="hiking/index.html">
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-</div>
+<!-- =========================
+     ADVENTURES
+========================= -->
 
 
-
-<div class="category road">
-
-<div class="category-content">
-
-<i class="fa-solid fa-bus"></i>
-
-<h3>
-
-ROAD
-TRIPS
-
-</h3>
-
-<p>
-
-New roads,
-new places
-and stories worth telling.
-
-</p>
-
-<a href="road-trips/index.html">
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-</div>
+<section id="adventures"
+  class="adventure-grid section">
 
 
-
-<div class="category waterfall">
-
-<div class="category-content">
-
-<i class="fa-solid fa-droplet"></i>
-
-<h3>
-
-WATERFALL
-CHASING
-
-</h3>
-
-<p>
-
-Follow the water.
-Find the wild.
-
-</p>
-
-<a href="waterfalls/index.html">
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-</div>
+  <article class="adventure-card hike"
+    onclick="window.location.href='hiking/'"
+    style="cursor:pointer">
 
 
+    <div>
 
-<div class="category outdoors">
 
-<div class="category-content">
+      <span class="card-icon">
+        🥾
+      </span>
 
-<i class="fa-solid fa-campground"></i>
 
-<h3>
+      <h3>
 
-OUTDOOR
-EXPERIENCES
+        Hiking<br>
 
-</h3>
+        Adventures
 
-<p>
+      </h3>
 
-Step outside,
-connect with nature
-and live the moment.
 
-</p>
+      <p>
 
-<a href="outdoors/index.html">
+        Find your trail. Chase the view. Feel the climb.
 
-<i class="fa-solid fa-arrow-right"></i>
+      </p>
 
-</a>
 
-</div>
+    </div>
 
-</div>
+
+    <a href="hiking/"
+      onclick="event.stopPropagation()">
+
+      →
+
+    </a>
+
+
+  </article>
+
+
+  <article class="adventure-card road"
+    onclick="window.location.href='road-trips/'"
+    style="cursor:pointer">
+
+
+    <div>
+
+
+      <span class="card-icon">
+        🚐
+      </span>
+
+
+      <h3>
+
+        Road<br>
+
+        Trips
+
+      </h3>
+
+
+      <p>
+
+        New roads, new places and stories worth telling.
+
+      </p>
+
+
+    </div>
+
+
+    <a href="road-trips/"
+      onclick="event.stopPropagation()">
+
+      →
+
+    </a>
+
+
+  </article>
+
+
+  <article class="adventure-card waterfall"
+    onclick="window.location.href='waterfalls/'"
+    style="cursor:pointer">
+
+
+    <div>
+
+
+      <span class="card-icon">
+        💦
+      </span>
+
+
+      <h3>
+
+        Waterfall<br>
+
+        Chasing
+
+      </h3>
+
+
+      <p>
+
+        Follow the water. Find the wild.
+
+      </p>
+
+
+    </div>
+
+
+    <a href="waterfalls/"
+      onclick="event.stopPropagation()">
+
+      →
+
+    </a>
+
+
+  </article>
+
+
+  <article class="adventure-card outdoors"
+    onclick="window.location.href='outdoors/'"
+    style="cursor:pointer">
+
+
+    <div>
+
+
+      <span class="card-icon">
+        ⛺
+      </span>
+
+
+      <h3>
+
+        Outdoor<br>
+
+        Experiences
+
+      </h3>
+
+
+      <p>
+
+        Step outside, connect with nature and live the moment.
+
+      </p>
+
+
+    </div>
+
+
+    <a href="outdoors/"
+      onclick="event.stopPropagation()">
+
+      →
+
+    </a>
+
+
+  </article>
+
 
 </section>
 
 
-
-<!--==========================
-            ABOUT
-===========================-->
-
-<section
-class="about"
-id="about">
-  <div class="about-image">
-
-<img src="assets/about.jpg"
-alt="Starling Expeditions Team">
-
-</div>
+<!-- =========================
+     ABOUT
+========================= -->
 
 
-<div class="about-content">
-
-<span class="section-title">
-
-ABOUT STARLING
-
-</span>
-
-<h2>
-
-Embrace Nature.
-
-<span>
-
-Create Memories.
-
-</span>
-
-</h2>
-
-<p>
-
-Starling Expeditions KE is a Kenyan adventure company
-dedicated to creating unforgettable outdoor experiences.
-We believe nature is the best classroom, the best escape,
-and the best place to build lasting memories.
-
-</p>
-
-<p>
-
-From breathtaking mountain hikes and scenic road trips
-to spectacular waterfalls and tailor-made outdoor
-experiences, every expedition is designed with safety,
-professionalism and fun in mind.
-
-</p>
-
-<p>
-
-Whether you are travelling as an individual,
-family, institution or corporate group,
-our mission is to help you explore Kenya
-like never before.
-
-</p>
+<section id="about"
+  class="about section">
 
 
-<div class="mission-vision">
-
-<div class="card">
-
-<i class="fa-solid fa-compass"></i>
-
-<h3>
-
-Our Mission
-
-</h3>
-
-<p>
-
-To inspire people to embrace nature by
-offering safe, memorable and affordable
-adventure experiences.
-
-</p>
-
-</div>
+  <div class="about-image"></div>
 
 
-<div class="card">
+  <div class="about-copy">
 
-<i class="fa-solid fa-earth-africa"></i>
 
-<h3>
+    <p class="section-label">
 
-Our Vision
+      THIS IS STARLING
 
-</h3>
+    </p>
 
-<p>
 
-To become Kenya's leading adventure and
-nature expedition company through
-exceptional customer experiences.
+    <h2>
 
-</p>
+      Embrace nature.<br>
 
-</div>
+      <span>Experience more.</span>
 
-</div>
+    </h2>
 
-</div>
+
+    <p>
+
+      Starling Expeditions KE is a community of explorers, nature lovers and
+
+      adventure seekers discovering Kenya one experience at a time.
+
+    </p>
+
+
+    <p>
+
+      We believe nature is not just something to look at.
+
+      It is something to feel, experience and connect with.
+
+    </p>
+
+
+    <a class="text-link"
+      href="#contact">
+
+      Come experience Kenya with us →
+
+    </a>
+
+
+  </div>
+
 
 </section>
 
 
-
-<!--======================================
-            WHY STARLING
-=======================================-->
-
-<section class="why-us">
-
-<div class="heading">
-
-<span>
-
-WHY CHOOSE US
-
-</span>
-
-<h2>
-
-Why Travel With Us
-
-</h2>
-
-<p>
-
-Adventure is more enjoyable when it is
-well organised, safe and unforgettable.
-
-</p>
-
-</div>
+<!-- =========================
+     EXPERIENCES
+========================= -->
 
 
-<div class="why-grid">
-
-<div class="why-card">
-
-<i class="fa-solid fa-shield-heart"></i>
-
-<h3>
-
-Safety First
-
-</h3>
-
-<p>
-
-Professional guides, emergency preparedness
-and carefully planned itineraries.
-
-</p>
-
-</div>
+<section id="trips"
+  class="trips section">
 
 
-<div class="why-card">
-
-<i class="fa-solid fa-users"></i>
-
-<h3>
-
-Experienced Team
-
-</h3>
-
-<p>
-
-Friendly tour leaders with extensive
-knowledge of Kenya's destinations.
-
-</p>
-
-</div>
+  <div class="section-heading">
 
 
-<div class="why-card">
-
-<i class="fa-solid fa-camera"></i>
-
-<h3>
-
-Amazing Experiences
-
-</h3>
-
-<p>
-
-Every trip is designed to leave you with
-stories and memories worth sharing.
-
-</p>
-
-</div>
+    <div>
 
 
-<div class="why-card">
+      <p class="section-label">
 
-<i class="fa-solid fa-leaf"></i>
+        FIND YOUR EXPERIENCE
 
-<h3>
+      </p>
 
-Nature Focused
 
-</h3>
+      <h2>
 
-<p>
+        Embrace the<br>
 
-We promote responsible tourism and
-environmental conservation.
+        <span>great outdoors.</span>
 
-</p>
+      </h2>
 
-</div>
 
-</div>
+    </div>
+
+
+    <p>
+
+      Whether you are chasing a summit, following a waterfall or simply
+
+      looking for a reason to get outside, Starling creates experiences
+
+      that bring you closer to nature.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="trip-grid">
+
+
+    <!-- HIKING -->
+
+
+    <article class="trip-card">
+
+
+      <div class="trip-image hells"></div>
+
+
+      <div class="trip-info">
+
+
+        <span class="trip-tag">
+
+          HIKING ADVENTURES
+
+        </span>
+
+
+        <h3>
+
+          Hills &<br>
+
+          Mountains
+
+        </h3>
+
+
+        <p>
+
+          Explore trails around
+
+          <strong>
+
+            Mount Longonot, Ngong Hills, Mount Kenya, the Aberdares,
+
+            Mount Elgon, Ol Donyo Sabuk, Elephant Hill and Menengai Crater.
+
+          </strong>
+
+
+          Find your trail, chase the view and embrace the climb.
+
+        </p>
+
+
+        <a href="hiking/">
+
+          Explore Hiking Destinations →
+
+        </a>
+
+
+      </div>
+
+
+    </article>
+
+
+    <!-- WATERFALLS -->
+
+
+    <article class="trip-card">
+
+
+      <div class="trip-image longonot"></div>
+
+
+      <div class="trip-info">
+
+
+        <span class="trip-tag">
+
+          WATERFALL CHASING
+
+        </span>
+
+
+        <h3>
+
+          Chase the<br>
+
+          Waterfalls
+
+        </h3>
+
+
+        <p>
+
+          Follow the sound of rushing water and discover places like
+
+          <strong>
+
+            Karuru Falls, Chania Falls, Fourteen Falls, Sheldrick Falls,
+
+            Zaina Falls and Thomson's Falls.
+
+          </strong>
+
+
+          Follow the water. Find the wild.
+
+        </p>
+
+
+        <a href="waterfalls/">
+
+          Chase a Waterfall →
+
+        </a>
+
+
+      </div>
+
+
+    </article>
+
+
+    <!-- ROAD TRIPS -->
+
+
+    <article class="trip-card">
+
+
+      <div class="trip-image falls"></div>
+
+
+      <div class="trip-info">
+
+
+        <span class="trip-tag">
+
+          ROAD TRIPS
+
+        </span>
+
+
+        <h3>
+
+          Take the<br>
+
+          Scenic Route
+
+        </h3>
+
+
+        <p>
+
+          Road trips to
+
+          <strong>
+
+            Naivasha, the Maasai Mara, Amboseli, Tsavo, Samburu,
+
+            Nanyuki, Lake Baringo and the Kenyan Coast.
+
+          </strong>
+
+
+          Pack your bags. The road is part of the story.
+
+        </p>
+
+
+        <a href="road-trips/">
+
+          Plan a Road Trip →
+
+        </a>
+
+
+      </div>
+
+
+    </article>
+
+
+    <!-- OUTDOOR EXPERIENCES -->
+
+
+    <article class="trip-card">
+
+
+      <div class="trip-image hells"></div>
+
+
+      <div class="trip-info">
+
+
+        <span class="trip-tag">
+
+          OUTDOOR EXPERIENCES
+
+        </span>
+
+
+        <h3>
+
+          Get Outside.<br>
+
+          Feel More.
+
+        </h3>
+
+
+        <p>
+
+          From
+
+          <strong>
+
+            camping, nature walks and bird watching to cycling,
+
+            kayaking, boat rides, rock climbing and other outdoor experiences
+
+          </strong>
+
+
+          find new ways to connect with nature.
+
+        </p>
+
+
+        <a href="outdoors/">
+
+          Explore Outdoors →
+
+        </a>
+
+
+      </div>
+
+
+    </article>
+
+
+    <!-- CUSTOM ADVENTURES -->
+
+
+    <article class="trip-card">
+
+
+      <div class="trip-image longonot"></div>
+
+
+      <div class="trip-info">
+
+
+        <span class="trip-tag">
+
+          CUSTOM ADVENTURES
+
+        </span>
+
+
+        <h3>
+
+          Your Idea.<br>
+
+          Our Expedition.
+
+        </h3>
+
+
+        <p>
+
+          Have a destination in mind?
+
+          We can help you plan a
+
+          <strong>
+
+            custom hiking trip, road trip or outdoor experience
+
+          </strong>
+
+
+          built around your people, your pace and your kind of adventure.
+
+        </p>
+
+
+        <a href="#contact">
+
+          Create an Adventure →
+
+        </a>
+
+
+      </div>
+
+
+    </article>
+
+
+    <!-- STARLING EXPERIENCE -->
+
+
+    <article class="trip-card">
+
+
+      <div class="trip-image falls"></div>
+
+
+      <div class="trip-info">
+
+
+        <span class="trip-tag">
+
+          THE STARLING EXPERIENCE
+
+        </span>
+
+
+        <h3>
+
+          Good People.<br>
+
+          Great Stories.
+
+        </h3>
+
+
+        <p>
+
+          Come for the destination.
+
+          Stay for the
+
+          <strong>
+
+            people, laughter, conversations and moments
+
+          </strong>
+
+
+          that turn an ordinary trip into a Starling experience.
+
+        </p>
+
+
+        <a href="#contact">
+
+          Join the Adventure →
+
+        </a>
+
+
+      </div>
+
+
+    </article>
+
+
+  </div>
+
 
 </section>
 
 
+<!-- =========================
+     GALLERY
+========================= -->
 
-<!--======================================
-            EXPERIENCES
-=======================================-->
 
-<section class="experiences" id="explore">
-  <div class="heading">
+<section id="gallery"
+  class="gallery section">
 
-<span>EXPLORE</span>
 
-<h2>Choose Your Adventure</h2>
+  <div class="section-heading">
 
-<p>
 
-Every journey is carefully planned to give you
-an unforgettable experience.
+    <div>
 
-</p>
 
-</div>
+      <p class="section-label">
 
+        THE STARLING EXPERIENCE
 
-<div class="experience-grid">
+      </p>
 
-<div class="experience-card">
 
-<img src="assets/hiking.jpg" alt="Hiking">
+      <h2>
 
-<div class="experience-info">
+        Go further.<br>
 
-<span>HIKING</span>
+        <span>Embrace nature.</span>
 
-<h3>Mountain Adventures</h3>
+      </h2>
 
-<p>
 
-Experience Mount Longonot,
-Ngong Hills, Elephant Hill,
-Mt. Kenya and many more breathtaking trails.
+    </div>
 
-</p>
 
-<a href="hiking/index.html"
-class="trip-btn">
+  </div>
 
-Explore →
 
-</a>
+  <div class="gallery-grid">
 
-</div>
 
-</div>
+    <div class="gallery-item g1"></div>
 
+    <div class="gallery-item g2"></div>
 
-<div class="experience-card">
+    <div class="gallery-item g3"></div>
 
-<img src="assets/roadtrip.jpg" alt="Road Trips">
+    <div class="gallery-item g4"></div>
 
-<div class="experience-info">
+    <div class="gallery-item g5"></div>
 
-<span>ROAD TRIPS</span>
+    <div class="gallery-item g6"></div>
 
-<h3>Scenic Escapes</h3>
 
-<p>
+  </div>
 
-Travel across Kenya's most beautiful landscapes,
-parks and hidden gems with unforgettable road adventures.
-
-</p>
-
-<a href="road-trips/index.html"
-class="trip-btn">
-
-Explore →
-
-</a>
-
-</div>
-
-</div>
-
-
-<div class="experience-card">
-
-<img src="assets/waterfall.jpg" alt="Waterfalls">
-
-<div class="experience-info">
-
-<span>WATERFALLS</span>
-
-<h3>Nature Escapes</h3>
-
-<p>
-
-Discover spectacular waterfalls,
-lush forests and refreshing nature walks
-across Kenya.
-
-</p>
-
-<a href="waterfalls/index.html"
-class="trip-btn">
-
-Explore →
-
-</a>
-
-</div>
-
-</div>
-
-
-<div class="experience-card">
-
-<img src="assets/outdoor.jpg" alt="Outdoor">
-
-<div class="experience-info">
-
-<span>OUTDOORS</span>
-
-<h3>Outdoor Experiences</h3>
-
-<p>
-
-Camping,
-team building,
-bonfires,
-cycling,
-photography
-and unforgettable outdoor moments.
-
-</p>
-
-<a href="outdoors/index.html"
-class="trip-btn">
-
-Explore →
-
-</a>
-
-</div>
-
-</div>
-
-</div>
 
 </section>
 
 
+<!-- =========================
+     WHY STARLING
+========================= -->
 
-<!--==========================
-        GALLERY
-===========================-->
 
-<section class="gallery"
-id="gallery">
+<section class="why section">
 
-<div class="heading">
 
-<span>MEMORIES</span>
+  <div class="why-card">
 
-<h2>Adventure Gallery</h2>
 
-<p>
+    <strong>01</strong>
 
-Moments captured from our previous expeditions.
 
-</p>
+    <h3>
 
-</div>
+      Adventure First
 
-<div class="gallery-grid">
+    </h3>
 
-<img src="assets/gallery1.jpg" alt="">
-<img src="assets/gallery2.jpg" alt="">
-<img src="assets/gallery3.jpg" alt="">
-<img src="assets/gallery4.jpg" alt="">
-<img src="assets/gallery5.jpg" alt="">
-<img src="assets/gallery6.jpg" alt="">
 
-</div>
+    <p>
+
+      We believe the best experiences begin when you step outside.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="why-card">
+
+
+    <strong>02</strong>
+
+
+    <h3>
+
+      Good People
+
+    </h3>
+
+
+    <p>
+
+      Shared experiences are better with the right people around you.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="why-card">
+
+
+    <strong>03</strong>
+
+
+    <h3>
+
+      Nature Always
+
+    </h3>
+
+
+    <p>
+
+      We create experiences that bring you closer to the natural world.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="why-card">
+
+
+    <strong>04</strong>
+
+
+    <h3>
+
+      Make It Count
+
+    </h3>
+
+
+    <p>
+
+      Come back with stories, memories and moments worth keeping.
+
+    </p>
+
+
+  </div>
+
 
 </section>
 
 
-
-<!--==========================
-        CONTACT
-===========================-->
-
-<section class="contact"
-id="contact">
-
-<div class="contact-left">
-
-<span class="section-title">
-
-CONTACT US
-
-</span>
-
-<h2>
-
-Let's Plan
-
-Your Adventure
-
-</h2>
-
-<p>
-
-Whether you're travelling alone,
-with friends,
-family,
-or an institution,
-
-we're ready to create an unforgettable experience.
-
-</p>
-
-<div class="contact-details">
-
-<p>
-
-<i class="fa-solid fa-phone"></i>
-
-0745 947 000
-
-</p>
-
-<p>
-
-<i class="fa-solid fa-envelope"></i>
-
-starlingexpeditionske@gmail.com
-
-</p>
-
-<p>
-
-<i class="fa-solid fa-location-dot"></i>
-
-Limuru,
-Kenya
-
-</p>
-
-</div>
-
-</div>
+<!-- =========================
+     CONTACT
+========================= -->
 
 
-<div class="contact-right">
+<section id="contact"
+  class="contact section">
 
-<form>
 
-<input
-type="text"
-placeholder="Full Name"
-required>
+  <div>
 
-<input
-type="email"
-placeholder="Email Address"
-required>
 
-<input
-type="tel"
-placeholder="Phone Number">
+    <p class="section-label">
 
-<select>
+      EMBRACE NATURE
 
-<option>
+    </p>
 
-Choose Adventure
 
-</option>
+    <h2>
 
-<option>Hiking</option>
+      Your next story<br>
 
-<option>Road Trips</option>
+      <span>starts here.</span>
 
-<option>Waterfalls</option>
+    </h2>
 
-<option>Outdoor Experiences</option>
 
-</select>
+    <p>
 
-<textarea
-rows="6"
-placeholder="Tell us about your adventure..."></textarea>
+      Tell us where you want to go — or let us help you find your next
 
-<button>
+      outdoor experience.
 
-Send Inquiry
+    </p>
 
-</button>
 
-</form>
+    <p class="contact-number">
 
-</div>
+      📞 0745 947 000
+
+    </p>
+
+
+  </div>
+
+
+  <form class="contact-form"
+    onsubmit="handleSubmit(event)">
+
+
+    <input
+      type="text"
+      placeholder="Your name"
+      required>
+
+
+    <input
+      type="email"
+      placeholder="Your email"
+      required>
+
+
+    <select required>
+
+
+      <option value="">
+
+        What are you interested in?
+
+      </option>
+
+
+      <option>
+
+        Hiking
+
+      </option>
+
+
+      <option>
+
+        Road Trips
+
+      </option>
+
+
+      <option>
+
+        Waterfall Chasing
+
+      </option>
+
+
+      <option>
+
+        Outdoor Experiences
+
+      </option>
+
+
+    </select>
+
+
+    <textarea
+      placeholder="Tell us about your adventure..."
+      rows="4"></textarea>
+
+
+    <button
+      class="btn btn-primary"
+      type="submit">
+
+
+      Chat With Starling →
+
+    </button>
+
+
+  </form>
+
 
 </section>
 
 
+</main>
 
-<!--==========================
-        FOOTER
-===========================-->
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 
 <footer>
 
-<div>
 
-<img
-src="assets/logo.png"
-class="footer-logo"
-alt="Logo">
-
-<p>
-
-Embrace Nature.
-
-Explore Kenya.
-
-Create Memories.
-
-</p>
-
-</div>
+  <div class="footer-brand">
 
 
-<div>
-
-<h3>
-
-Quick Links
-
-</h3>
-
-<ul>
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#adventures">Adventures</a></li>
-
-<li><a href="#gallery">Gallery</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</div>
+    <img
+      src="assets/logo.jpeg"
+      alt="Starling Expeditions KE">
 
 
-<div>
+    <p>
 
-<h3>
+      Embrace Nature.
 
-Experiences
-
-</h3>
-
-<ul>
-
-<li><a href="hiking/index.html">Hiking</a></li>
-
-<li><a href="road-trips/index.html">Road Trips</a></li>
-
-<li><a href="waterfalls/index.html">Waterfalls</a></li>
-
-<li><a href="outdoors/index.html">Outdoor</a></li>
-
-</ul>
-
-</div>
+    </p>
 
 
-<div>
+  </div>
 
-<h3>
 
-Follow Us
+  <div>
 
-</h3>
 
-<p><i class="fab fa-facebook"></i> Facebook</p>
+    <p class="footer-title">
 
-<p><i class="fab fa-instagram"></i> Instagram</p>
+      EXPLORE
 
-<p><i class="fab fa-tiktok"></i> TikTok</p>
+    </p>
 
-<p><i class="fab fa-whatsapp"></i> WhatsApp</p>
 
-</div>
+    <a href="#adventures">
+
+      Adventures
+
+    </a>
+
+
+    <a href="#trips">
+
+      Explore
+
+    </a>
+
+
+    <a href="#gallery">
+
+      Gallery
+
+    </a>
+
+
+  </div>
+
+
+  <div>
+
+
+    <p class="footer-title">
+
+      CONNECT
+
+    </p>
+
+
+    <a href="#contact">
+
+      Book an Adventure
+
+    </a>
+
+
+    <a href="#contact">
+
+      Contact Us
+
+    </a>
+
+
+  </div>
+
+
+  <div>
+
+
+    <p class="footer-title">
+
+      THE STARLING WAY
+
+    </p>
+
+
+    <p class="muted">
+
+      Explore. Experience. Embrace nature.
+
+    </p>
+
+
+  </div>
+
+
+  <div class="copyright">
+
+    © 2026 Starling Expeditions KE. All rights reserved.
+
+  </div>
+
 
 </footer>
 
 
-<div class="copyright">
+<script src="script.js"></script>
 
-© 2026 Starling Expeditions KE.
-
-All Rights Reserved.
-
-</div>
 
 </body>
 
