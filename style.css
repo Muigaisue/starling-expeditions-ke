@@ -1268,3 +1268,150 @@ font-size:42px;
 }
 
 }
+/*==================================================
+        POLISH & EFFECTS
+==================================================*/
+
+/* Smooth image zoom */
+
+.experience-card img,
+.gallery-grid img,
+.about-image img{
+
+transition:transform .5s ease;
+
+}
+
+.experience-card:hover img,
+.gallery-grid img:hover,
+.about-image:hover img{
+
+transform:scale(1.05);
+
+}
+
+/* Better shadows */
+
+.card,
+.why-card,
+.experience-card,
+.contact-right{
+
+box-shadow:
+0 12px 30px rgba(0,0,0,.12);
+
+}
+
+/* Navigation */
+
+.navbar{
+
+transition:
+background .35s,
+padding .35s;
+
+}
+
+/* Buttons */
+
+.primary-btn,
+.secondary-btn,
+.trip-btn{
+
+cursor:pointer;
+
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.trip-btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* Footer */
+
+footer{
+
+border-top:4px solid var(--primary);
+
+}
+
+footer ul{
+
+padding-left:0;
+
+}
+
+footer li{
+
+list-style:none;
+
+}
+
+/* Contact icons */
+
+.contact-details i{
+
+width:24px;
+
+text-align:center;
+
+}
+
+/* Gallery */
+
+.gallery-grid{
+
+align-items:center;
+
+}
+
+.gallery-grid img{
+
+object-fit:cover;
+
+}
+
+/* Typography */
+
+h1,h2,h3{
+
+letter-spacing:.5px;
+
+}
+
+p{
+
+font-weight:400;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#eee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:var(--primary);
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:var(--primary-dark);
+
+}
